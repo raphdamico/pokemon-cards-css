@@ -18,7 +18,8 @@
 
 :root {
   
-  --card-aspect: 0.718;
+  /* --card-aspect: 0.718; */
+  --card-aspect: 0.5789473684;
   --card-radius: 4.55% / 3.5%;
   --card-edge: hsl(47, 100%, 78%);
   --card-back: hsl(205, 100%, 25%);
@@ -220,6 +221,10 @@ button.card__rotator {
   transform: translate3d(0px, 0px, 0.01px);
 }
 
+.card__front img {
+  transform: scale(1.10, 1.05);
+}
+
 .loading .card__front {
   opacity: 0;
 }
@@ -319,12 +324,30 @@ Shine & Glare Effects
   /** masking image for cards which are masked **/
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
-	-webkit-mask-size: cover;
-  mask-size: cover;
+	-webkit-mask-size: 110% 105%;
+  mask-size: 110% 105%;
   -webkit-mask-position: center center;
   mask-position: center center;
 
 }
+
+.card.masked .card__darkening,
+.card.masked .card__darkening:before,
+.card.masked .card__darkening:after {
+
+  /** masking image for cards which are masked **/
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+	-webkit-mask-size: 110% 105%;
+  mask-size: 110% 105%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  background: black;
+  opacity: 0.4;
+
+}
+
+
 
 .card[data-rarity="rare holo"] .card__glare:after,
 .card[data-rarity="rare holo cosmos"] .card__glare:after,

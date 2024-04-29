@@ -9,6 +9,7 @@
   export let id = "";
   export let name = "";
   export let number = "";
+  export let count = 1;
   export let set = "";
   export let types = "";
   export let subtypes = "basic";
@@ -37,8 +38,10 @@
   let isTrainerGallery = false;
 
   let back_img = back;
+  // let back_img = "/zonecards/character_front_1 .1.png";
   let front_img = "";
-  let img_base = img.startsWith("http") ? "" : "https://images.pokemontcg.io/";
+  // let img_base = img.startsWith("http") ? "" : "https://images.pokemontcg.io/";
+  let img_base = ""
 
 
   let thisCard;
@@ -334,10 +337,19 @@
   const imageLoader = (e) => {
     loading = false;
     if ( mask || foil ) {
-      foilStyles = `
-    --mask: url(${mask});
-    --foil: url(${foil});
-      `;
+    //   foilStyles = `
+    // --mask: url(${mask});
+    // --foil: url(${foil});
+    //   `;
+    console.log("ASDASDASD", count)
+    // foilStyles = `
+    // --mask: url(/zonecards/character_holo_${count}%20.${count}.png);
+    // --foil: url(/zonecards/character_holo_${count}%20.${count}.png);
+    //   `;
+    foilStyles = `
+    --mask: url(/zonecards/alpha/inverted_character_holo_${count}%20.${count}.png);
+    --foil: url(/zonecards/alpha/inverted_character_holo_${count}%20.${count}.png);
+      `;    
     }
   };
 
@@ -439,6 +451,7 @@
         />
         <div class="card__shine"></div>
         <div class="card__glare"></div>
+        <div class="card__darkening"></div>
       </div>
     </button>
   </div>

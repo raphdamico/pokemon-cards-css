@@ -7,6 +7,7 @@
   export let id = undefined;
   export let name = undefined;
   export let number = undefined;
+  export let count = undefined;
   export let set = undefined;
   export let types = undefined;
   export let subtypes = undefined;
@@ -88,8 +89,11 @@
     if ( isDefined( img ) ) {
       return img;
     }
-    if ( isDefined( set ) && isDefined( number ) ) {
-      return `https://images.pokemontcg.io/${ set.toLowerCase() }/${ number }_hires.png`;
+    console.log("TEST", number)
+    if ( isDefined( set ) && isDefined( number ) && isDefined( count )) {
+      console.log("count", count)
+      return `/zonecards/character_front_${count} .${count}.png`;
+      // return `https://images.pokemontcg.io/${ set.toLowerCase() }/${ number }_hires.png`;
     }
     return "";
   }
@@ -234,6 +238,7 @@
     id,
     name,
     number,
+    count,
     set,
     types,
     subtypes,

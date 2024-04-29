@@ -1,0 +1,53 @@
+[
+  {
+    "id": "swsh11tg-TG05",
+    "set": "swsh11tg",
+    "name": "Pikachu",
+    "supertype": "Pokémon",
+    "subtypes": ["Basic"],
+    "types": ["Lightning"],
+    "number": "TG05",
+    "count": 1,
+    "rarity": "trainer gallery rare holo",
+    "images": {
+      "small": "https://images.pokemontcg.io/swsh11tg/TG05.png",
+      "large": "https://images.pokemontcg.io/swsh11tg/TG05_hires.png",
+      "foil": "/zonecards/character_front_12.png",
+      "mask": "/zonecards/character_front_12.png"
+    }
+  },
+  {
+    "id": "swsh11tg-TG05",
+    "set": "swsh11tg",
+    "name": "Charizard",
+    "supertype": "Pokémon",
+    "subtypes": ["Stage 2"],
+    "types": ["Fire"],
+    "number": "TG03",
+    "count": 2,
+    "rarity": "trainer gallery rare holo",
+    "images": {
+      "small": "https://images.pokemontcg.io/swsh11tg/TG03.png",
+      "large": "https://images.pokemontcg.io/swsh11tg/TG03_hires.png",
+      "foil": "/img/foils/swsh11/foils/tg03_foil_holo_rainbow.jpg",
+      "mask": "/img/foils/swsh11/masks/tg03_foil_holo_rainbow.png"
+    }  
+  },
+  {
+    "id": "swsh11tg-TG03",
+    "set": "swsh11tg",
+    "name": "Charizard",
+    "supertype": "Pokémon",
+    "subtypes": ["Stage 2"],
+    "types": ["Fire"],
+    "number": "TG03",
+    "count": 3,
+    "rarity": "trainer gallery rare holo",
+    "images": {
+      "small": "https://images.pokemontcg.io/swsh11tg/TG03.png",
+      "large": "https://images.pokemontcg.io/swsh11tg/TG03_hires.png",
+      "foil": "/img/foils/swsh11/foils/tg03_foil_holo_rainbow.jpg",
+      "mask": "/img/foils/swsh11/masks/tg03_foil_holo_rainbow.png"
+    }  
+  }
+]

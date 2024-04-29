@@ -24,7 +24,7 @@
   --angle: -22deg;
   --imgsize: 300% 400%;
 
-  clip-path: var(--clip-borders);
+  /* clip-path: var(--clip-borders); */
 
   background-image:
     repeating-linear-gradient( var(--angle),  
@@ -104,6 +104,8 @@
     );
 
   mix-blend-mode: soft-light;
+
+  opacity: 0.2;
 
 }
 
