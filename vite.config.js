@@ -19,6 +19,7 @@ export default defineConfig(({mode}) => {
   };
 
   return {
+    base: "/pokemon-cards-css/",
     plugins: [svelte(), htmlPlugin()],
     server: {
       watch: {
