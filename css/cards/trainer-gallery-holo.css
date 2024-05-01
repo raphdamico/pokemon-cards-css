@@ -103,9 +103,16 @@
       hsla(180, 11%, 35%, 1) 60% 
     );
 
+    /* radial-gradient( 
+      farthest-corner circle at var(--pointer-x) var(--pointer-y), 
+      hsla(0, 0%, 100%, 1) 5%, 
+      hsla(0, 0%, 100%, 0.8) 8%, 
+      hsla(180, 11%, 35%, 1) 60% 
+    );     */
+
   mix-blend-mode: soft-light;
 
-  opacity: 0.2;
+  opacity: 0.7;
 
 }
 
