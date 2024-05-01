@@ -12,8 +12,8 @@
     "images": {
       "small": "https://images.pokemontcg.io/swsh11tg/TG05.png",
       "large": "https://images.pokemontcg.io/swsh11tg/TG05_hires.png",
-      "foil": "/zonecards/character_front_12.png",
-      "mask": "/zonecards/character_front_12.png"
+      "foil": "./zonecards/character_front_12.png",
+      "mask": "./zonecards/character_front_12.png"
     }
   },
   {
