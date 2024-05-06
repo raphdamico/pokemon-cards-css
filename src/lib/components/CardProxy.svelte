@@ -89,10 +89,9 @@
     if ( isDefined( img ) ) {
       return img;
     }
-    console.log("TEST", number)
     if ( isDefined( set ) && isDefined( number ) && isDefined( count )) {
-      console.log("count", count)
-      return `/zonecards/character_front_${count} .${count}.png`;
+      console.log("count", img)
+      return `./zonecards/character_front_${count} .${count}.png`;
       // return `https://images.pokemontcg.io/${ set.toLowerCase() }/${ number }_hires.png`;
     }
     return "";
